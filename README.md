@@ -1,4 +1,4 @@
-# Udemy - Angela Yu 100 Dayas Python
+# Udemy - Angela Yu 100 Days Python
 
 
 - [About this project](#about)
