@@ -62,7 +62,7 @@ if choice1 == "left":
                  |/                                                        \|
             ''')
         elif choice3 == "blue":
-            print("You called for Alfred Pennyworth the Butler. \nMistaking you for a criminal, he judiciously beats you to fatal pulp. \nGame Over.")
+            print("You called for Alfred Pennyworth the Butler. \nMistaking you for a criminal, he judiciously beats you to a fatal pulp. \nGame Over.")
         else:
             print("Your poor choice has led to deadly consequences. \nThe Legion of Doom eliminates you before you can reach Batman. \nGame Over.")
     else:
