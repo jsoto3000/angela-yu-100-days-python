@@ -1,3 +1,5 @@
 # Ignore .txt files
 *.txt
 *.pyc
+**/.idea
+**/venv
