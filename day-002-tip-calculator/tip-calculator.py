@@ -11,9 +11,14 @@ tip_as_percent = tip / 100
 total_tip_amount = bill * tip_as_percent
 total_bill = bill + total_tip_amount
 bill_per_person = total_bill / people
-final_amount = round(bill_per_person, 2)
+final_amount1 = round(bill_per_person, 2)
 
 #short form
-final_amount = round(bill * (1 + tip / 100) / people, 2)
+final_amount2 = round(bill * (1 + tip / 100) / people, 2)
 
-print(f"Each person should pay: ${final_amount}")
+#formatted to two decimal places
+final_amount3 = "{:.2f}".format(bill_per_person)
+
+print(f"Long form: Each person should pay: ${final_amount1}")
+print(f"Short form: Each person should pay: ${final_amount2}")
+print(f"Formatted to two decimal places: Each person should pay: ${final_amount3}")
