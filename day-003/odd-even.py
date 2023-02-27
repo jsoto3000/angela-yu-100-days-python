@@ -1,3 +1,17 @@
+'''
+Intro to Modulo %
+
+Modulo returns returns the remainder or signed remainder of 
+a division, after one number is divided by another 
+(called the modulus of the operation). 
+'''
+
+a = 7 % 2
+b = 7 % 3
+
+print("Modulo of 7/2 = ", a)
+print("Modulo of 7/3 = ", b)
+
 # Don't change the code below
 number = int(input("Which number do you want to check? "))
 # Don't change the code above

@@ -1,3 +1,13 @@
+'''
+if/elif/else      vs    multiple if
+if condition1:          if condition 1:
+  do A                    do A
+elif condition2:        if condition2:
+  do B                    do B
+else:                   if condition3:
+  do C                    do C
+'''
+
 print("Welcome to the rollercoaster!")
 height = int(input("What is your height in cm? "))
 bill = 0
@@ -17,7 +27,7 @@ if height >= 120:
     bill = 12
     print("Adult tickets are $12.")
 
-  wants_photo = input("Do you want a photo taken? Y or N. ")
+  wants_photo = input("Do you want a photo taken? Y or N. ").upper()
   if wants_photo == "Y":
     bill += 3
 
