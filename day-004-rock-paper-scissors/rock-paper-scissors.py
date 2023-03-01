@@ -27,13 +27,28 @@ scissors = '''
 ---.__(___)
 '''
 game_images = [rock, paper, scissors]
-
+print("Ready to play Rock, Paper, Scisssors!\n")
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
-print(game_images[user_choice])
+
+if user_choice == 0:
+    user_choice_str = "Rock"
+elif user_choice == 1:
+    user_choice_str = "Paper"
+elif user_choice == 2:
+    user_choice_str = "Scissors"
+
+print(f"\nYou chose {user_choice_str}\n", game_images[user_choice])
 
 computer_choice = random.randint(0, 2)
-print("Computer chose:")
-print(game_images[computer_choice])
+
+if computer_choice == 0:
+    computer_choice_str = "Rock"
+elif computer_choice == 1:
+    computer_choice_str = "Paper"
+elif computer_choice == 2:
+    computer_choice_str = "Scissors"
+
+print(f"\nThe computer chose {computer_choice_str}\n", game_images[computer_choice])
 
 if user_choice >= 3 or user_choice < 0:
     print("You typed an invalid number, you lose!")
