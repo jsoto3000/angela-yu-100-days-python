@@ -7,7 +7,7 @@ from time import sleep
 
 # define our clear function
 
-print(name)
+print("Your os name is:", name)
 
 def clear():
 
@@ -26,4 +26,4 @@ def clear():
 # sleep(2)
 
 # now call function we defined above
-clear()
+# clear()

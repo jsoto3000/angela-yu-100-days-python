@@ -3,7 +3,7 @@ from hangman_art import stages, logo
 from hangman_words import word_list
 from replit import clear
 
-print(logo)
+logo()
 game_is_finished = False
 lives = len(stages) - 1
 
