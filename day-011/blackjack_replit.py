@@ -36,8 +36,6 @@ import random
 from os_clear import clear
 from art import logo
 
-print(logo)
-
 def deal_card():
   """Returns a random card from the deck."""
   cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
@@ -83,6 +81,8 @@ def compare(user_score, computer_score):
 
 def play_game():
 
+  print(logo)
+
   #Hint 5: Deal the user and computer 2 cards each using deal_card()
   user_cards = []
   computer_cards = []
@@ -105,7 +105,7 @@ def play_game():
       is_game_over = True
     else:
       #Hint 10: If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card() function to add another card to the user_cards List. If no, then the game has ended.
-      user_should_deal = input("Type 'y' to get another card, type 's' to stay: ")
+      user_should_deal = input("Type 'y' to get another card, type 'n' to pass: ")
       if user_should_deal == "y":
         user_cards.append(deal_card())
       else:
