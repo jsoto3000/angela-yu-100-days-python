@@ -1,3 +1,5 @@
+#Calulator 1
+
 from os_clear import clear
 from art import logo
 
@@ -26,8 +28,8 @@ def calculator():
     num1 = float(input("What's the first number?: "))
     for symbol in operations:
         print(symbol)
-    should_continue = True
 
+    should_continue = True
     while should_continue:
         operation_symbol = input("Pick an operation: ")
         num2 = float(input("What's the next number?: "))
@@ -40,6 +42,5 @@ def calculator():
         else:
             should_continue = False
             clear()
-            calculator()
 
 calculator()
