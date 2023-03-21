@@ -34,7 +34,7 @@ while not should_end:
 #TODO-2: What if the user enters a shift that is greater than the number of letters in the alphabet?
 #Try running the program and entering a shift number of 45.
 #Hint: Think about how you can use the modulus (%).
-    shift = shift % 25
+    shift = shift % 26
 
     caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
     restart = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n")

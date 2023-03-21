@@ -1,4 +1,6 @@
 #Simple Function
+#Functions with Inputs
+#Arguments and Parameters
 def greet():
     print("Hello Angela")
     print("How do you do Jack Bauer?")
