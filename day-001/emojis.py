@@ -1,3 +1,5 @@
+#emojis
+
 import emojis
 
 print('This is a message with emojis 😄 🐍')
