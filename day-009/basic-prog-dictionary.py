@@ -1,4 +1,7 @@
+#Dictionaries: Key/Value Pairs
+#Nesting
+
 programming_dictionary = {
     "Bug": "An error in a program that prevents the program from running as expected.",
-    "Functition": "A piece of code that you can easily call over and over again.",
+    "Function": "A piece of code that you can easily call over and over again.",
 }

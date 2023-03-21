@@ -6,7 +6,8 @@ programming_dictionary = {
 }
 
 #Retrieving items from dictionary.
-# print(programming_dictionary["Function"])
+print(programming_dictionary["Function"])
+print("\n")
 
 #Adding new items to dictionary.
 programming_dictionary["Loop"] = "The action of doing something over and over again."
@@ -23,13 +24,24 @@ programming_dictionary["Bug"] = "A moth in your computer."
 # print(programming_dictionary)
 
 #Loop through a dictionary
-# for key in programming_dictionary:
-#   print(key)
-#   print(programming_dictionary[key])
+for key in programming_dictionary:
+    print(key)
+    print(programming_dictionary[key])
 
-#######################################
+print("\n")
+
+for key in programming_dictionary:
+    print(f"{key}: {programming_dictionary[key]}")
+
+########################################################################
 
 #Nesting
+
+# {
+#   Key1: [List],
+#   Key2: {Dict},
+# }
+
 capitals = {
     "France": "Paris",
     "Germany": "Berlin",

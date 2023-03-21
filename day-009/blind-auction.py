@@ -1,3 +1,5 @@
+#use flow chart
+
 from art import logo
 from os_clear import clear
 print(logo)
@@ -23,6 +25,7 @@ while not bidding_finished:
     should_continue = input("Are there any other bidders? Type 'yes or 'no'.\n")
     if should_continue == "no":
         bidding_finished = True
+        print(f"Here are the current bids: {bids}.")
         find_highest_bidder(bids)
     elif should_continue == "yes":
         clear()
