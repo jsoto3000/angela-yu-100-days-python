@@ -1,7 +1,7 @@
 #This produces a type error when you run it.
 #That should be hint to check this line below
 #to make sure it is a int and not a string.
-year = (input("Which year do you want to check?"))
+year = input("Which year do you want to check?")
 
 if year % 4 == 0:
   if year % 100 == 0:

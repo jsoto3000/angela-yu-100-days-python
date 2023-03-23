@@ -1,12 +1,24 @@
-############DEBUGGING#####################
+############DEBUGGING######################
 
-# # Describe Problem
+#1 - Describe the Problem
+#2 - Reproduce the bug
+#3 - PLay computer
+#4 - Fix the errors
+#5 - Print is your friend
+#6 - Use a debugger
+#7 - Take a break
+#8 - Ask a friend
+#9 - Run code often
+#10 - Search/Ask stackoverflow.com
+
+# 1 - Describe Problem
 # def my_function():
 #   for i in range(1, 20):
 # never reaches 20, range should be 1, 21
 #     if i == 20:
 #       print("You got it")
 # my_function()
+
 
 # # Reproduce the Bug
 # from random import randint
