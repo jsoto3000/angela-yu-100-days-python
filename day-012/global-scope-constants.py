@@ -1,7 +1,6 @@
 ################### Scope ####################
-# Namespaces: Global vs Local Scope
-# There is no Block Scope in Python
-# Modifying Global Variable
+# For Constants can use global scope variables
+# It's not true that you should never use global scope variables
 
 enemies = "Skeleton"
 
