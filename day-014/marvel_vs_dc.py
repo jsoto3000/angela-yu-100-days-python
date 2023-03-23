@@ -29,7 +29,7 @@ def format_dc_data(dc_account):
     return f"{dc_name}, the {dc_description}, from the {dc_universe} universe"
 
 def check_answer(guess, marvel_strength_count, dc_strength_count):
-    """Checks followers against user's guess
+    """Checks super powers against user's guess
     and returns True if they got it right.
     Or False if they got it wrong."""
     if marvel_strength_count > dc_strength_count:
