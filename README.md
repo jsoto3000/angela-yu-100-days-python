@@ -22,4 +22,4 @@ Python code along.
 <a name="technical_information"></a>
 ## Technical Information
 
-N/A
+Coded in Linux (UBUNTU) environment.

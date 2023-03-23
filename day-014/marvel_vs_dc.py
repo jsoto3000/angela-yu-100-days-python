@@ -18,7 +18,7 @@ def format_marvel_data(marvel_account):
     marvel_description = marvel_account["description"]
     marvel_universe = marvel_account["universe"]
     # print(f'{marvel_name}: {marvel_account["strength_count"]}')
-    return f"{marvel_name}, the {marvel_description}, from {marvel_universe}"
+    return f"{marvel_name}, the {marvel_description}, from the {marvel_universe} universe"
 
 def format_dc_data(dc_account):
     """Format account into printable format: name, description and universe"""
@@ -26,7 +26,7 @@ def format_dc_data(dc_account):
     dc_description = dc_account["description"]
     dc_universe = dc_account["universe"]
     # print(f'{dc_name}: {dc_account["strength_count"]}')
-    return f"{dc_name}, the {dc_description}, from {dc_universe}"
+    return f"{dc_name}, the {dc_description}, from the {dc_universe} universe"
 
 def check_answer(guess, marvel_strength_count, dc_strength_count):
     """Checks followers against user's guess
@@ -49,9 +49,9 @@ def game():
         account_dc = get_random_dc_account()
         account_marvel = get_random_marvel_account()
 
-        print(f"Compare A: {format_marvel_data(account_marvel)}.")
+        print(f"{format_marvel_data(account_marvel)}!")
         print(vs)
-        print(f"Against B: {format_dc_data(account_dc)}.\n")
+        print(f"{format_dc_data(account_dc)}!\n")
 
         guess = input("Which universe has the strongest hero? Type 'Marvel' or 'DC': ").lower()
 
