@@ -1,22 +1,23 @@
-# This is a sample Python script.
+# turtle graphics documentation
+# https://docs.python.org/3/library/turtle.html
+# tkinter
+# https://docs.python.org/3/library/tkinter.html
+# use alias syntax: import turtle as t
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
-######## Challenge 1 - Draw a Square ############
 import turtle as t
 import random
-import colorgram
 
-timmy_the_turtle = t.Turtle()
 
-for _ in range(4):
-    timmy_the_turtle.forward(100)
-    timmy_the_turtle.left(90)
+########### Challenge 1 - Draw a Square ###########
 
 tim = t.Turtle()
+tim.shape("turtle")
+tim.color("blue")
+
+for _ in range(4):
+    tim.forward(100)
+    tim.left(90)
+
 
 ########### Challenge 2 - Draw a Dashed Line ########
 for _ in range(15):
@@ -25,7 +26,6 @@ for _ in range(15):
     tim.forward(10)
     tim.pendown()
 
-tim = t.Turtle()
 
 ########### Challenge 3 - Draw Shapes ########
 
@@ -41,7 +41,6 @@ for shape_side_n in range(3, 10):
     tim.color(random.choice(colours))
     draw_shape(shape_side_n)
 
-tim = t.Turtle()
 
 ########### Challenge 4 - Random Walk ########
 colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
@@ -66,8 +65,6 @@ def random_color():
     color = (r, g, b)
     return color
 
-########### Challenge 5 - Spirograph ########
-
 def draw_spirograph(size_of_gap):
     for _ in range(int(360 / size_of_gap)):
         tim.color(random_color())
@@ -78,15 +75,3 @@ draw_spirograph(5)
 
 screen = t.Screen()
 screen.exitonclick()
-###Hirst Painting Project Part 1
-###This code will not work in repl.it as there is no access to the colorgram package here.###
-##We talk about this in the video tutorials##
-
-
-
-rgb_colors = []
-colors = colorgram.extract('image.jpg', 30)
-for color in colors:
-    rgb_colors.append(color.rgb)
-
-print(rgb_colors)
