@@ -1,5 +1,7 @@
+# link to opentdb.com
+
 from question_model import Question
-from data import question_data
+from data_new import question_data
 from quiz_brain import QuizBrain
 
 question_bank = []
