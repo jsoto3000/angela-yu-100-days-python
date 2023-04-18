@@ -25,6 +25,12 @@ def turn_right():
     new_heading = tim.heading() - 10
     tim.setheading(new_heading)
 
+def pen_up():
+    tim.penup()
+
+def pen_down():
+    tim.pendown()
+
 def clear():
     tim.clear()
     tim.penup()
@@ -37,5 +43,8 @@ screen.onkey(move_backwards, "Down")
 screen.onkey(turn_left, "Left")
 screen.onkey(turn_right, "Right")
 screen.onkey(clear, "c")
+screen.onkey(pen_up, "u")
+screen.onkey(pen_down, "d")
+
 
 screen.exitonclick()
