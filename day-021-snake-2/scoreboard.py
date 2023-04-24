@@ -1,6 +1,6 @@
 from turtle import Turtle
 ALIGNMENT = "center"
-FONT = ("Courier", 24, "normal")
+FONT = ("Courier", 12, "normal")
 
 
 class Scoreboard(Turtle):
@@ -10,7 +10,7 @@ class Scoreboard(Turtle):
         self.score = 0
         self.color("white")
         self.penup()
-        self.goto(0, 270)
+        self.goto(5, 270)
         self.hideturtle()
         self.update_scoreboard()
 
