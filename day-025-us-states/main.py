@@ -20,7 +20,7 @@ all_states = data.state.to_list()
 guessed_states = []
 
 while len(guessed_states) < 50:
-    # note: use title case method to make answer case insensitive
+    # note: use title case method to make answer upper/lower case insensitive
     answer_state = screen.textinput(title=f"{len(guessed_states)}/50 States Correct",
                                     prompt="What's another state's name?").title()
     # print(answer_state)
